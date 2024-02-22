@@ -1,8 +1,8 @@
 import { exampleApi } from '@/app/redux/services/api';
 import { configureStore } from '@reduxjs/toolkit';
 
-import { someSlice } from '@/redux/someData/reducer';
-import { logger } from '@/redux/middlewares/logger';
+import { someSlice } from '@redux/someData/reducer';
+import { logger } from '@redux/middlewares/logger';
 
 /* стор - хранилище данных */
 export const store = configureStore({
