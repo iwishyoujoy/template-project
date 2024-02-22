@@ -11,18 +11,18 @@ import { Skeleton } from "@components/Skeleton";
 
 export default function Home() {
   /* пример использования query, возвращает разные индикаторы получения информации, можно добавить скелетоны и обработку ошибок */
-  const {data, isLoading, error} = useGetSomethingByNameQuery("bla");
+  // const {data, isLoading, error} = useGetSomethingByNameQuery("bla");
 
   /* пример использования селектора */
   const something = useSelector(someDataSelector);
 
-  if (error){
-  return <div>Oops</div>;
-  }
+  // if (error){
+  // return <div>Oops</div>;
+  // }
 
-  if (isLoading){
-  return <div>some skeleton</div>;
-  }
+  // if (isLoading){
+  // return <div>some skeleton</div>;
+  // }
 
   /* пример использования сеттера*/
   const dispath = useDispatch();
