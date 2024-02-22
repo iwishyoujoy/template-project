@@ -9,7 +9,7 @@ export const store = configureStore({
     reducer: {
         /* здесь хранятся редьюсеры, чтобы брать информацию из стора */
         [exampleApi.reducerPath]: exampleApi.reducer,
-        cart: someSlice.reducer,
+        something: someSlice.reducer,
     },
     middleware: (getDefaultMiddleware) => 
         getDefaultMiddleware().concat([exampleApi.middleware, logger]),
