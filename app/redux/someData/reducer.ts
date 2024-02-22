@@ -5,7 +5,7 @@ interface SomeState {
     timestamp: string;
 }
 
-/* срез стора, где мы храним какую-то определенную информацию, здесь можно прописать сетеры и изначальное значение в сторе*/
+/* срез стора для определенного объекта, где мы храним какую-то определенную информацию, здесь можно прописать сетеры и изначальное значение в сторе*/
 export const someSlice = createSlice({
     name: 'someSlice',
     initialState: {
@@ -21,3 +21,5 @@ export const someSlice = createSlice({
         },
     }
 });
+
+export const { setId, setTimestamp } = someSlice.actions;
