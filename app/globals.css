@@ -5,6 +5,10 @@
   /* чтобы в случае чего сменить значение здесь и оно поменяется во всем проекте */
 
   --main-color: white;
+
+  /* цвета для скелетонов - двуцветный градиент */
+  --skeleton-dark: hsl(204, 7%, 86%);
+  --skeleton-light: hsl(200, 20%, 95%);
 }
 
 /* сбрасываем правила css */
@@ -90,4 +94,24 @@ label {
 
 legend {
 	display: block;
+}
+
+/* стили для скелетонов разной формы */
+
+.rectangle {
+  width: 200px;
+  border-radius: 8px;
+  height: 100px;
+}
+
+.text {
+  width: 200px;
+  height: 24px;
+  border-radius: 8px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
